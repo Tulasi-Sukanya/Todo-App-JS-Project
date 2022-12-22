@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#container{
+    height: 100%;
+    width: 100%;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    padding-top: 5%;
+}
+.cards-container{
+    margin: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#cards-list{
+    margin: 12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+h1{
+    margin-top: -50px;
+    font-weight: bold;
+    color: white;
+}
+#item-btn{
+    display: flex;
+    justify-content: space-around;
+    margin: -7px;
+    align-items: center;
+}
+#item-btn span{
+    color: white;
+    font-size: 1.5em;
+}
+.fa-circle-plus{
+    color: orangered;
+    font-size: 20px;
+    margin-top: 5px;
+}
+h2{
+    color: white;
+    /* margin-left: 2em; */
+    text-align: center;
+}
+#popup1, #popup2{
+    width: 23%;
+    background-color: white;
+    padding: 2%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 37.5%;
+    border-radius: 10px;  
+}
+#text-input,#text-input2{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    padding: 2%;
+}
+#newtask{
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: orangered;
+    font-size: large;
+}
+#add-btn, #close-btn,#add-btn2,#close-btn2{
+    background-color: orangered;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid gray;
+    padding:5px 15px;
+    letter-spacing: 0px;
+}
+input:focus{
+    outline: 0.5px solid black;
+}
+input{
+    caret-color: orangered;
+    text-transform: capitalize;
+}
+#adding-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+.item-1{
+width: 23%;
+line-height: normal;
+margin: 1%;
+background-color: white;
+border-radius: 10px;
+padding:10px 20px;
+text-align: center;
+
+}
+#adding-item{
+    text-align: center;
+}
+#delete-icon{
+    color: red;
+    margin:5px
+}
+#below-plus-icon{
+    color: rgb(33, 33, 240);
+    margin:5px
+}
+.delete-add{
+   
+    padding: 10px;
+   display: flex;
+   justify-content: end;
+}
+.para-styling{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+/* \\\\\\\\\ */
+/* .item{
+    height: 160px;
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+} */

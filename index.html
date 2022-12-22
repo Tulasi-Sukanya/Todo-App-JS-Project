@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Todo App JJS</title>
+</head>
+<body>
+    <div id="container">
+        <div class="flex-container">
+            <h1 id="title">Tasks <span>List</span></h1>
+            <span id="item-btn">
+                <i class="fa-solid fa-circle-plus symbol" onclick="popupopen()"></i>&nbsp;&nbsp;
+                <span id="new-item">Add Item</span>
+            </span>
+        </div>
+        <h2 id="subhead">No Items in the Todo list</h2>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <div id="cards-list"></div>
+    </div>
+
+    <div id="popup1">
+        <h3 id="newtask">Add New List</h3>
+        <input id="text-input" type="text" placeholder="Add New Task">
+        <br><br>
+        <div class="btn">
+            <button id="add-btn" onclick="addcard()" type="submit">Add</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="close-btn" onclick="popupclose()" type="reset">Close</button>
+        </div>
+    </div>
+
+    <div id="popup2">
+        <h3 id="newtask">Add New Task</h3>
+
+        <input id="text-input2" type="text" placeholder="Add New Item">
+        <br><br>
+        <div class="btn">
+            <button id="add-btn2" type="submit">Add</button>
+            <button id="close-btn2" onclick="popupclose()" type="reset">Close</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
