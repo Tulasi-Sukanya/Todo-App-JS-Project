@@ -87,10 +87,6 @@ function addcard() {
         document.getElementById('container').style.filter = "blur(5px)"
         // document.getElementById('cards-container').style.filter="blur(5px)"
     })
-    createbuttondelete.addEventListener('click',function closepopup(){
-        document.getElementById('popup2').style.display = "none"
-    })
-
 
     console.log(array[array.length-1]);
 }
@@ -113,6 +109,10 @@ document.getElementById('add-btn2').addEventListener('click', function addpara()
     })
 });
 
+document.getElementById('close-btn2').addEventListener('click',function removepopup(){
+    document.getElementById('popup2').style.display = "none"
+    document.getElementById('container').style.filter = "blur(0px)"
+})
 
 
 
