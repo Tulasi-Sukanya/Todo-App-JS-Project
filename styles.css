@@ -132,7 +132,6 @@ text-align: center;
     cursor: pointer;
     font-size: 15px;
 }
-/* \\\\\\\\\ */
 /* .item{
     height: 160px;
     width: 100px;
@@ -140,3 +139,16 @@ text-align: center;
     padding: 10px;
     border-radius: 10px;
 } */
+@media screen and (min-width:380px) and (max-width:800px){
+    #popup1, #popup2{
+        display: block;
+        width: 23%;
+        background-color: white;
+        padding: 2%;
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        left: 37.5%;
+        border-radius: 10px;  
+    }
+}

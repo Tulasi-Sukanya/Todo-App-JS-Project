@@ -32,10 +32,11 @@ function addcard() {
     let createitem = document.createElement('div')
     createitem.setAttribute('class', 'item-1')
     createitem.style.width = "200px";
-    // createitem.style.boxShadow=""
+    // createitem.style.boxShadow="3px 3px 3px  #FAEA10"
 
     let createddiv = document.createElement('div')
     createddiv.setAttribute('id', 'item-list')
+
 
     createheading = document.createElement('h3')
     createheading.setAttribute('id', 'heading')
@@ -77,8 +78,9 @@ function addcard() {
     createheading.style.texttransform="captalize"
 
     createbuttondelete.addEventListener('click', function removeCard() {
-        console.log('error');
+        // console.log('error');
         createitem.style.display = "none"
+        console.log(array[array.length-1]);
     })
 
     createbuttonplus.addEventListener('click', function addpopup() {
@@ -87,7 +89,6 @@ function addcard() {
         document.getElementById('container').style.filter = "blur(5px)"
         // document.getElementById('cards-container').style.filter="blur(5px)"
     })
-
     console.log(array[array.length-1]);
 }
 //code for tasks in a card...
@@ -116,32 +117,4 @@ document.getElementById('close-btn2').addEventListener('click',function removepo
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
